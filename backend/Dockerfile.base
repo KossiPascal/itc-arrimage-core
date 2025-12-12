@@ -1,0 +1,41 @@
+# Dockerfile.base
+# FROM python:3.11-slim
+FROM python:3.11.8-slim
+# ------------------------------------------------------------
+# 1. Installer packages système
+# ------------------------------------------------------------
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        python3-dev \
+        libffi-dev \
+        libssl-dev \
+        curl \
+        netcat-openbsd \
+        postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+
+# ------------------------------------------------------------
+# 2. Créer un environnement virtuel
+# ------------------------------------------------------------
+RUN python3 -m venv /venv
+ENV PATH="/venv/bin:$PATH"
+
+# ------------------------------------------------------------
+# 3. Upgrade pip et setuptools
+# ------------------------------------------------------------
+RUN pip install --upgrade pip setuptools wheel
+
+# ------------------------------------------------------------
+# 4. Copier requirements et installer les dépendances
+# ------------------------------------------------------------
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir --default-timeout=200 --retries=5 -r requirements.txt
+
+# ------------------------------------------------------------
+# 5. Variables d'environnement générales
+# ------------------------------------------------------------
+ENV PIP_DEFAULT_TIMEOUT=200
+ENV PIP_RETRIES=5
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1

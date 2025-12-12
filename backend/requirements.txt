@@ -1,0 +1,41 @@
+# Flask et extensions
+Flask==3.0.3
+Flask-Cors==3.0.10
+Flask-JWT-Extended==4.7.1
+Flask-SQLAlchemy==3.0.3
+Flask-APScheduler==1.13.1
+
+# Requests et HTTP
+requests==2.32.0
+urllib3==1.26.18
+aiohttp==3.8.5
+
+# PostgreSQL
+psycopg2-binary==2.9.9
+
+# Planification de tâches
+apscheduler==3.10.4
+
+# Gestion de l'environnement et utilitaires
+python-dotenv==1.0.1
+tqdm==4.66.5
+pytz==2024.1
+
+# Sécurité / hash
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+
+# Serveur WSGI
+gunicorn==21.2.0
+
+# Authentification JWT
+PyJWT==2.8.0
+
+# Azure
+azure-synapse-artifacts==0.21.0
+
+# Traitement d'images
+Pillow==10.4.0
+
+# Correctif setuptools
+setuptools<81

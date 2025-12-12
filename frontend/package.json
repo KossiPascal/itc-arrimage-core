@@ -1,0 +1,33 @@
+{
+  "name": "dhis2-sync-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "rm -rf ../backend/frontend_build/* && cp -r dist/* ../backend/frontend_build/",
+    "preview": "vite preview--port 4173"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@monaco-editor/react": "^4.7.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "lucide-react": "^0.555.0",
+    "monaco-editor": "^0.55.1",
+    "path": "^0.12.7",
+    "react": "^18.3.1",
+    "react-datepicker": "^9.0.0",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.9.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.4.7",
+    "vite": "^5.4.21"
+  }
+}

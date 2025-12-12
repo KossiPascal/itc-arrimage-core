@@ -1,0 +1,12 @@
+# Dockerfile.backend
+# FROM python:3.11-slim AS base
+# <- utiliser l'image construite à partir de Dockerfile.base
+
+FROM itc-arrimage-base:latest
+
+WORKDIR /app
+
+COPY . /app
+
+# CMD pour Gunicorn
+CMD ["gunicorn", "-b", "0.0.0.0:5801", "wsgi:app", "--workers", "3", "--worker-class", "gthread", "--threads", "4"]

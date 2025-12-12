@@ -1,0 +1,12 @@
+# Dockerfile.scheduler
+# FROM python:3.11-slim AS base
+# <- utiliser l'image construite à partir de Dockerfile.base
+
+FROM itc-arrimage-base:latest
+
+
+WORKDIR /scheduler
+COPY . /scheduler
+
+# CMD pour le scheduler
+CMD ["python", "run_scheduler.py"]
