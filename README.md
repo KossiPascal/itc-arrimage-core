@@ -1,14 +1,39 @@
-# itc-arrimage-core
+# ITC Arrimage Core
 
-Plateforme d'arrimage et de synchronisation DHIS2\
-(Instance ITC / Santé Communautaire → Instance Nationale DHIS2 Togo)
+## 📘 Description
 
-Ce document présente les étapes nécessaires pour configurer, préparer et
-exécuter le projet.
+Plateforme complète d'arrimage, de synchronisation et de monitoring des
+données entre deux instances DHIS2 (Source → Destination).\
+Elle inclut : - un backend Python/Flask\
+- un scheduler APScheduler\
+- un PostgreSQL + PgAdmin\
+- une interface web moderne React/JS\
+- un système d'authentification JWT + refresh token
 
 ------------------------------------------------------------------------
 
-# 🧱 1. Structure des fichiers nécessaires
+## 📦 Architecture
+
+-   **itc-arrimage-backend** : API Flask + arrimage\
+-   **itc-arrimage-scheduler** : tâches automatiques (MV refresh, sync
+    TEI, sync orgunits...)\
+-   **itc-arrimage-postgres** : base de données PostgreSQL\
+-   **itc-arrimage-pgadmin** : interface SQL web\
+-   **itc-arrimage-core/frontend** : dashboard React
+
+------------------------------------------------------------------------
+
+## 🚀 Installation
+
+### 1️⃣ Cloner le projet
+
+```bash
+git clone https://github.com/KossiPascal/itc-arrimage-core
+cd itc-arrimage-core
+```
+------------------------------------------------------------------------
+
+### 🧱 1. Structure des fichiers nécessaires
 
 Avant de lancer l'application, vous devez préparer :
 
@@ -20,7 +45,7 @@ Tous ces fichiers doivent être créés **dans le dossier parent** de `itc-arrim
 
 ------------------------------------------------------------------------
 
-# 📝 2. Création du fichier `.env`
+### 📝 2. Création du fichier `.env`
 
 Créer un fichier `.env` contenant :
 
@@ -96,7 +121,7 @@ MATVIEW_NAME='indicators_matview'
 
 ------------------------------------------------------------------------
 
-# 🧩 3. Fichier `docker-compose.base.yml`
+### 🧩 3. Fichier `docker-compose.base.yml`
 
 ``` yaml
 services:
@@ -117,7 +142,7 @@ networks:
 
 ------------------------------------------------------------------------
 
-# 🧩 4. Fichier `docker-compose.yml`
+### 🧩 4. Fichier `docker-compose.yml`
 
 ``` yaml
 services:
@@ -257,9 +282,9 @@ networks:
 
 ------------------------------------------------------------------------
 
-# 🚀 5. Lancer l'application
+### 🚀 5. Lancer l'application
 
-### Étape 1 --- Construire l'image de base
+#### Étape 1️⃣ --- Construire l'image de base
 
 ``` bash
 sudo docker compose -f docker-compose.base.yml up --build --remove-orphans
@@ -268,7 +293,7 @@ sudo docker compose -f docker-compose.base.yml up --build --remove-orphans
 
 Use fois cette étape terminé, vous pouvez lancer votre application à l'Étape 2
 
-### Étape 2 --- Lancer l'application
+#### Étape 2️⃣ --- Lancer l'application
 
 ``` bash
 sudo docker compose up --build --remove-orphans
@@ -278,20 +303,45 @@ sudo docker compose up --build --remove-orphans
 sudo docker compose up --build --remove-orphans -d
 ```
 
+#### Étape 3️⃣ --- ......
+``` bash
+``` 
+
+#### Étape 3️⃣ --- ......
+``` bash
+``` 
 ------------------------------------------------------------------------
 
-# 📸 6. Aperçu général de l'application
+## 📸 6. Aperçu général de l'application
 
-``` md
-<p float="left">
-  <img src="docs/images/img1.png" width="300" />
-  <img src="docs/images/img2.png" width="300" />
-  <img src="docs/images/img3.png" width="300" />
-  <img src="docs/images/img4.png" width="300" />
-  <img src="docs/images/img5.png" width="300" />
-  <img src="docs/images/img6.png" width="300" />
-  <img src="docs/images/img7.png" width="300" />
+```{=html}
+<p float="left" align="center">
+```
+`<img src="docs/images/img1.png" width="280" />`{=html}
+`<img src="docs/images/img2.png" width="280" />`{=html}
+`<img src="docs/images/img3.png" width="280" />`{=html} `<br/>`{=html}
+`<img src="docs/images/img4.png" width="280" />`{=html}
+`<img src="docs/images/img5.png" width="280" />`{=html}
+`<img src="docs/images/img6.png" width="280" />`{=html} `<br/>`{=html}
+`<img src="docs/images/img7.png" width="280" />`{=html}
+```{=html}
 </p>
 ```
+
+------------------------------------------------------------------------
+
+## ✔️ 7. Badges
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)\
+![Docker](https://img.shields.io/badge/docker-ready-brightgreen)\
+![Status](https://img.shields.io/badge/status-stable-success)
+
+------------------------------------------------------------------------
+
+## 👤 8. Auteur
+
+**Kossi TSOLEGNAGBO — ITC Innovation**  
+📧 *kossi.tsolegnagbo@gmail.com*
+(+228) 92 64 56 51
 
 ------------------------------------------------------------------------
