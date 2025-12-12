@@ -279,3 +279,19 @@ sudo docker compose up --build --remove-orphans -d
 ```
 
 ------------------------------------------------------------------------
+
+# 📸 6. Aperçu général de l'application
+
+``` md
+<p float="left">
+  <img src="docs/images/img1.png" width="300" />
+  <img src="docs/images/img2.png" width="300" />
+  <img src="docs/images/img3.png" width="300" />
+  <img src="docs/images/img4.png" width="300" />
+  <img src="docs/images/img5.png" width="300" />
+  <img src="docs/images/img6.png" width="300" />
+  <img src="docs/images/img7.png" width="300" />
+</p>
+```
+
+------------------------------------------------------------------------
