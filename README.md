@@ -323,16 +323,14 @@ sudo docker compose up --build --remove-orphans -d
 ![Architecture_7](docs/images/img7.png) -->
 
 <p float="left">
-    <img src="docs/images/img1.png" width="300">
-    <img src="docs/images/img2.png" width="300">
-    <img src="docs/images/img3.png" width="300">
-    <img src="docs/images/img4.png" width="300">
-    <img src="docs/images/img5.png" width="300">
-    <img src="docs/images/img6.png" width="300">
-    <img src="docs/images/img7.png" width="300">
+    <img src="docs/images/img1.png" width="200">
+    <img src="docs/images/img2.png" width="200">
+    <img src="docs/images/img3.png" width="200">
+    <img src="docs/images/img4.png" width="200">
+    <img src="docs/images/img5.png" width="200">
+    <img src="docs/images/img6.png" width="200">
+    <img src="docs/images/img7.png" width="200">
 </p>
-
-
 
 ------------------------------------------------------------------------
 
@@ -348,6 +346,6 @@ sudo docker compose up --build --remove-orphans -d
 
 **Kossi TSOLEGNAGBO — ITC Innovation**  
 📧 *kossi.tsolegnagbo@gmail.com*
-(+228) 92 64 56 51
+***(+228) 92 64 56 51***
 
 ------------------------------------------------------------------------
