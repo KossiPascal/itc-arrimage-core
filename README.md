@@ -3,22 +3,22 @@
 ## 📘 Description
 
 Plateforme complète d'arrimage, de synchronisation et de monitoring des
-données entre deux instances DHIS2 (Source → Destination).\
-Elle inclut : - un backend Python/Flask\
-- un scheduler APScheduler\
-- un PostgreSQL + PgAdmin\
-- une interface web moderne React/JS\
+données entre deux instances DHIS2 (Source → Destination).
+Elle inclut : 
+- un backend Python/Flask
+- un scheduler APScheduler
+- un PostgreSQL + PgAdmin
+- une interface web moderne React/JS
 - un système d'authentification JWT + refresh token
 
 ------------------------------------------------------------------------
 
 ## 📦 Architecture
 
--   **itc-arrimage-backend** : API Flask + arrimage\
--   **itc-arrimage-scheduler** : tâches automatiques (MV refresh, sync
-    TEI, sync orgunits...)\
--   **itc-arrimage-postgres** : base de données PostgreSQL\
--   **itc-arrimage-pgadmin** : interface SQL web\
+-   **itc-arrimage-backend** : API Flask + arrimage
+-   **itc-arrimage-scheduler** : tâches automatiques (MV refresh, sync TEI, sync orgunits...)
+-   **itc-arrimage-postgres** : base de données PostgreSQL
+-   **itc-arrimage-pgadmin** : interface SQL web
 -   **itc-arrimage-core/frontend** : dashboard React
 
 ------------------------------------------------------------------------
@@ -293,6 +293,7 @@ sudo docker compose -f docker-compose.base.yml up --build --remove-orphans
 
 Use fois cette étape terminé, vous pouvez lancer votre application à l'Étape 2
 
+
 #### Étape 2️⃣ --- Lancer l'application
 
 ``` bash
@@ -303,13 +304,13 @@ sudo docker compose up --build --remove-orphans
 sudo docker compose up --build --remove-orphans -d
 ```
 
-#### Étape 3️⃣ --- ......
+<!-- #### Étape 3️⃣ --- ......
 ``` bash
 ``` 
 
 #### Étape 3️⃣ --- ......
 ``` bash
-``` 
+```  -->
 ------------------------------------------------------------------------
 
 ## 📸 6. Aperçu général de l'application
