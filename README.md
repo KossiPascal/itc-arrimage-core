@@ -315,38 +315,24 @@ sudo docker compose up --build --remove-orphans -d
 ## 📸 6. Aperçu général de l'application
 
 ![Architecture_1](docs/images/img1.png)
-<img src="docs/images/img1.png" width="600">
-
 ![Architecture_2](docs/images/img2.png)
-<img src="docs/images/img2.png" width="600">
-
 ![Architecture_3](docs/images/img3.png)
-<img src="docs/images/img3.png" width="600">
-
 ![Architecture_4](docs/images/img4.png)
-<img src="docs/images/img4.png" width="600">
-
 ![Architecture_5](docs/images/img5.png)
-<img src="docs/images/img5.png" width="600">
-
 ![Architecture_6](docs/images/img6.png)
-<img src="docs/images/img6.png" width="600">
-
 ![Architecture_7](docs/images/img7.png)
-<img src="docs/images/img7.png" width="600">
 
 
-``` html
 <p float="left">
-    <img src="./docs/images/img1.png" width="280" />
-    <img src="./docs/images/img2.png" width="280" />
-    <img src="./docs/images/img3.png" width="280" />
-    <img src="./docs/images/img4.png" width="280" />
-    <img src="./docs/images/img5.png" width="280" />
-    <img src="./docs/images/img6.png" width="280" />
-    <img src="./docs/images/img7.png" width="280" />
+    <img src="docs/images/img1.png" width="600">
+    <img src="docs/images/img2.png" width="600">
+    <img src="docs/images/img3.png" width="600">
+    <img src="docs/images/img4.png" width="600">
+    <img src="docs/images/img5.png" width="600">
+    <img src="docs/images/img6.png" width="600">
+    <img src="docs/images/img7.png" width="600">
 </p>
-```
+
 
 
 ```{=html}
